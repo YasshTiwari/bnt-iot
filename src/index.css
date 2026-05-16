@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* GLOBAL TRANSITION */
+
+button,
+.service-card,
+.gallery-card,
+.value-card,
+.vision-box,
+.nav-links a {
+
+  transition: all 0.4s ease;
+}
+
+
+/* MOBILE HOVER EFFECT */
+
+.mobile-hover {
+
+  transform: translateY(-8px) scale(1.03) !important;
+
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.6) !important;
+
+  background: rgba(56, 189, 248, 0.12) !important;
+}
+
+
+/* BUTTON SPECIAL EFFECT */
+
+button.mobile-hover {
+
+  transform: scale(1.05) !important;
+
+  box-shadow: 0 0 20px #38bdf8 !important;
+}

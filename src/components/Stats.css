@@ -1,0 +1,28 @@
+.stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.stat-card {
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #0f172a, #111827);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    transition: 0.4s;
+}
+
+.stat-card:hover,
+.stat-card:active {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+.stat-card h1 {
+    color: #38bdf8;
+    font-size: 50px;
+    margin-bottom: 15px;
+}

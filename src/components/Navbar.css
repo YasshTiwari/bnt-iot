@@ -1,0 +1,182 @@
+/*  NAVBAR  */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 4%;
+
+    background: rgba(75, 73, 73, 0.4);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+/* LEFT SECTION */
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* LOGO */
+
+.logo-img {
+    width: 150px;
+    height: 170px;
+    object-fit: contain;
+}
+
+/* LOGO TEXT */
+
+.nav-left h2 {
+    color: #38f888;
+    font-size: 24px;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Hover Underline */
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: #38bdf8;
+    transition: 0.4s;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a:active::after {
+    width: 100%;
+}
+
+.nav-links li a:hover .nav-links li a:active {
+    color: #38bdf8;
+}
+
+/* ================= MENU ICON ================= */
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media(max-width:900px) {
+
+    .navbar {
+        height: 75px;
+    }
+
+    .logo-img {
+        width: 130px;
+        height: 55px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 85px;
+        right: -100%;
+
+        width: 260px;
+
+        flex-direction: column;
+        gap: 22px;
+
+        background: #020617;
+
+        padding: 30px;
+        border-radius: 12px;
+
+        transition: 0.4s;
+    }
+
+    .nav-links.active {
+        right: 20px;
+    }
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+/* ACTIVE PAGE */
+.active-link {
+    color: #38f888 !important;
+    background: rgba(56, 248, 136, 0.15);
+    box-shadow: 0 0 10px rgba(56, 248, 136, 0.5);
+}
+
+button,
+.service-card,
+.gallery-card,
+.value-card,
+.vision-box,
+.nav-links li a {
+
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.service-card,
+button,
+.gallery-card,
+.value-card {
+
+    transition: 0.3s;
+}
+
+.service-card:hover,
+.service-card:active {
+
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
+}
+
+button:hover,
+button:active {
+
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #38bdf8;
+}
