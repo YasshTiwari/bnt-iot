@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import ServiceCard from '../components/ServiceCard'
 import emailjs from '@emailjs/browser'
+import SpiderEffect from '../components/SpiderEffect'
 import React, { useEffect, useRef, useState } from 'react'
 import { FaArrowLeft, FaArrowRight, FaMapMarkedAlt, FaChartLine, FaMicrochip, FaRobot, FaCloud, FaSeedling } from 'react-icons/fa'
 import './Home.css'
